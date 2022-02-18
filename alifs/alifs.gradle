@@ -1,0 +1,25 @@
+
+apply plugin: 'groovy'
+apply plugin: 'io.jmix'
+
+group = 'cn.jmix.alifs'
+archivesBaseName = 'jmixcn-alifs'
+
+dependencies {
+    api 'io.jmix.core:jmix-core'
+
+    api 'com.aliyun.oss:aliyun-sdk-oss:3.8.0'
+    testImplementation 'org.springframework.boot:spring-boot-test'
+    testImplementation 'org.springframework:spring-test'
+    testImplementation "org.spockframework:spock-core"
+    testImplementation "org.spockframework:spock-spring"
+    testRuntimeOnly 'org.slf4j:slf4j-simple'
+    testRuntimeOnly 'org.hsqldb:hsqldb'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine'
+
+}
+
+test {
+    useJUnitPlatform()
+}
