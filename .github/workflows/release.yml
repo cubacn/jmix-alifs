@@ -14,7 +14,7 @@ jobs:
         run: |
              gradle \ 
                 -Pversion=${{ github.event.release.tag_name }} \
-                --args='--jmix.alifs.accessKey=${{ jmix.alifs.accessKey }} --jmix.alifs.secretAccessKey=${{ jmix.alifs.secretAccessKey }}' \
+                --args='--jmix.alifs.accessKey=${{ JMIX_ALIFS_ACCESSKEY }} --jmix.alifs.secretAccessKey=${{ JMIX_ALIFS_SECRETACCESSKEY }}' \
                 build publish
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
