@@ -9,7 +9,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@PropertySource("classpath:/test_support/test-app.properties")
+@PropertySource(value = "classpath:/test_support/test-app.properties")
+@PropertySource(value = "classpath:/test_support/test-secrects.properties",ignoreResourceNotFound = true)
 @JmixModule(dependsOn = AliFileStorageConfiguration.class)
 public class AliFileStorageTestConfiguration {
     @Bean
