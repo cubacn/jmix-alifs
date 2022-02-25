@@ -8,7 +8,7 @@ on:
 
 jobs:
   ci:
-    name: CI pipeline
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Git Checkout
