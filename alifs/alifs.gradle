@@ -21,5 +21,11 @@ dependencies {
 }
 
 test {
+    if (project.hasProperty('args')) {
+        project.args.split(',').each {
+            def (key, value) = it.replaceFirst('--', "").split('=')
+            systemProperty ((String)key, (String)value)
+        }
+    }
     useJUnitPlatform()
 }
