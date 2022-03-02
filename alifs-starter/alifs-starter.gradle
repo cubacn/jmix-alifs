@@ -1,4 +1,4 @@
-archivesBaseName = 'alifs-starter'
+archivesBaseName = 'jmixcn-alifs-starter'
 
 jmix {
     entitiesEnhancing {
