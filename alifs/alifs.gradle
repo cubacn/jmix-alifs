@@ -3,7 +3,6 @@ import org.springframework.util.StringUtils
 apply plugin: 'groovy'
 apply plugin: 'io.jmix'
 
-group = 'cn.jmix.alifs'
 archivesBaseName = 'jmixcn-alifs'
 
 dependencies {

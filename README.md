@@ -8,12 +8,12 @@
 
 | Jmix 版本     | 扩展组件版本     | Implementation                             |
 |--------------|----------------|--------------------------------------------|
-| 1.1.*        | 1.0.0          | cn.jmix:alifs-starter:1.0.0                |
+| 1.1.*        | 1.0.0          | cn.jmix:jmixcn-alifs-starter:1.0.0                |
 
  `build.gradle` 文件中添加依赖:
 
 ```gradle
-implementation 'cn.jmix:alifs-starter:1.0.0'
+implementation 'cn.jmix:jmixcn-alifs-starter:1.0.0'
 ```
 
 # 配置
@@ -24,6 +24,6 @@ implementation 'cn.jmix:alifs-starter:1.0.0'
 | jmix.alifs.accessKey       |         | AccessKey ID，用于标识用户          |         
 | jmix.alifs.secretAccessKey |         | AccessKey Secret，用于验证用户的密钥 |
 | jmix.alifs.bucket          |         | 存储空间                           |
-| jmix.alifs.chunkSize       |   8192  | 每个分片的大小，单位是KB             |
-| jmix.alifs.endpointUrl     |         | 访问域名                           |
+| jmix.alifs.chunkSize       |   8192  | 块大小，单位是KB                    |
+| jmix.alifs.endpointUrl     |         | 服务端点地址                        |
 
